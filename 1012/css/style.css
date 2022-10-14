@@ -1,0 +1,259 @@
+@charset "UTF-8";
+.hrdTopWrap{
+    background: #333;
+}
+.hrdTop{
+    width:80%; /* =1080보다 훨씬 큼 */
+    max-width: 1080px; /*본체값 유동적이지만 요 이하로는 안되게 max나 min*/
+    color:#fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+}
+
+.hrdTop nav{
+    display: flex;
+    }
+
+.hrdTop nav h4 {
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-size: 14px;
+} 
+
+.hrdTop .logo i{
+    font-size: 15px;
+}
+
+.hrdWrap{
+    background: #978c9d;
+}
+
+.hrdWrap header{
+    width:80%;
+    max-width: 1080px; 
+    color:#fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+
+.hrdWrap header nav{
+    display: flex;
+}
+
+.hrdWrap header h4 {
+    margin-left: 20px;
+    text-transform:uppercase;
+    font-size: 16px;
+} 
+
+/* 공통영역 */
+.cntWrap .content{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+.cntWrap .content header{
+    text-align: center;
+}
+
+.cntWrap .content header h2{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 80px; /*두칸의 중간으로 오게*/
+}
+
+.cntWrap .content header p{
+    width: calc(100% / 12 * 4);
+    margin: 0 auto;
+    height: 40px; /*줄 수 많아서 height로*/
+    overflow: hidden;
+    line-height: 20px;
+    font-size: 14px;
+
+}
+
+
+.cntWrap .content section{
+    margin-top:80px;
+}
+
+.cntWrap .content section .image{
+    background-color: #ccc;
+}
+
+.cntWrap .content section .texts{
+    line-height: 20px;
+    font-size: 14px;
+} /**/
+
+.cntWrap .content section .texts p{
+    line-height: 20px;
+    font-size: 14px;
+} /**/
+
+.cntWrap .content section .texts h3{
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 16px;
+    text-transform:capitalize;
+}
+
+.cntWrap .content section .texts h5{
+    line-height:40px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cntWrap .content.cnt01 section>div{
+    display:flex;
+    justify-content: space-between;
+}
+
+.cntWrap .content.cnt01 .artTop article{
+    width: calc(50% - 20px); /*마진값을 뺀 50%*/
+}
+.cntWrap .content.cnt01 .artTop article .image{
+    height:320px;
+}
+
+.cntWrap .content.cnt01 .artBtm article{
+    width: calc(100% / 3 - 20px);
+}
+
+.cntWrap .content.cnt01 .artBtm {
+    margin-top:40px;
+}
+
+.cntWrap .content.cnt01 .artBtm .image{
+    height:340px;
+}
+
+.cntWrap .content.cnt01 .artTop .texts{
+    padding: 20px calc(100% / 6 * 1.5) 0 calc(100% / 6 * 0.5); /*부모 article의 한칸반*/
+} /**/
+.cntWrap .content.cnt01 .artTop .texts p, 
+.cntWrap .content.cnt01 .artBtm .texts p{
+    height:80px;
+    overflow:hidden;
+} 
+
+.cntWrap .content.cnt01 .artBtm .texts{
+    text-align: center;
+    padding: 20px calc(100% / 6 * 1.5) 0 calc(100% / 6 * 0.5);
+} /**/
+
+.cntWrap .content.cnt01 .artTop i{
+    line-height: 40px; /*한칸이라*/
+    margin-top: 20px;
+}
+.cntWrap .content.cnt01 .artBtm i{
+    line-height: 20px; /**/
+    margin-top: 10px;
+}
+
+
+/* 방법 1번
+.cntWrap .content.cnt02 header{
+background-color: #92899a;
+width:100vw;
+margin-left: min(calc((100vw - 1080px) / -2), calc((100vw - 80vw) / -2));
+} */
+
+
+/*방법 2번*/
+.cntWrap .content.cnt02{
+    width:100%;
+    max-width:none;
+}
+.cntWrap .content.cnt02 header{
+    background-color: #92899a;
+    padding: 160px 0 280px;
+    color:#fff;
+}
+.cntWrap.cntWrap02 .content header p{
+    width: calc(80% / 12 * 8);
+    max-width: 700px; /*1080보다 크므로 막아주기 위해 그리드 세서 계산해서 넣어줌*/
+} /**/
+
+.cntWrap .cnt02 section{
+    width: 80%;
+    max-width: 1080px;
+    margin:0 auto;
+    margin-top:-200px;
+    box-shadow: 2px 2px 4px #ccc;
+}
+
+.cntWrap .cnt02 section article{
+    display: flex; 
+    background:#fff;
+}
+.cntWrap .cnt02 section article>div{
+    width:50%;
+}
+.cntWrap .cnt02 section article .texts{
+    padding: 80px calc(100% / 12); /**/
+    text-align: center;
+}
+
+.cntWrap .cnt02 section article .texts p{
+    height: 100px;
+    overflow: hidden;
+}
+
+.cntWrap .cnt02 section article .texts button{
+    margin-top:10px;
+    width: calc(100% / 4 * 2); /**/
+    height: 40px;
+    background: #55455f;
+    border-radius: 20px;
+    color:#fff;
+    border:0;
+}
+.cntWrap .cnt03 section{
+    display:flex;
+    justify-content: space-between;
+}
+
+.cntWrap .cnt03 section article{
+    width: calc(100% / 4 - 20px);
+    background: #828594;
+    height: 240px;
+    overflow: hidden; /*article에 가려질 부분 빼고 헤이츠 잡고 히든 하면 이미지 안보임*/
+}
+
+.cntWrap .cnt03 section article .image{
+    height: 240px;  
+}
+
+.cntWrap .cnt03 section article:hover .texts{
+    margin-top:-240px; /*☆article에 hover를 줘야함*/
+}
+
+.cntWrap .cnt03 section article .texts{
+    /*margin-top:-240px; */
+    background-color: rgba(255,255,255,0.7);
+    padding:40px 20px 60px;
+    text-align: center;
+    color: #000;
+    transition: 0.3s;/* 바뀌어야할 대상에! */
+}
+
+.cntWrap .cnt03 section article h3{
+    color:#fff;
+    color: #000;
+}
+.cntWrap .cnt03 section article p{
+    margin-top:20px;
+    height:80px; /*4줄이니까*/
+    color:#fff;
+    overflow: hidden;
+    color: #000;
+}
+
